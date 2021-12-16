@@ -1,0 +1,10 @@
+header {
+  background-color: #00dbeb;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
