@@ -29,3 +29,7 @@ nav {
   right: 1.5em;
   flex-direction: column;
 }
+
+#arrow {
+  color: red;
+}
