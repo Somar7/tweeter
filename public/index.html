@@ -20,9 +20,11 @@
     
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -58,30 +60,9 @@
           </div>
         </form>
       </section>
-      <section class="tweets">
-        <article class="tweet-header wrapper">
-          <header>
-            <!-- <div class="left">             -->
-              <img class="left" id="pic" src="https://vanillicon.com/v2/18b17927f2b4161732286364b14d2a13.svg">
-              <h1 class="left">Dr.Sulz</h1>
-            <!-- </div> -->
-            <h5 class="right">@TheDoctor</h5>
-          </header>
-          <p class="message">
-            Addicted to shitting on niggas, i be Putin harder then Vladimir!
-          </p>
-          <footer class="tweet-footer">
-            <div>
-              <p class="left" id="days">10 Days Ago</p>
-            </div>
-            <div>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-              <i class="fas fa-flag"></i>
-            </div>
-          </footer>
-        </article>
-      </section>
+      <div class="tweets-container"></div>
     </main>
   </body>
 </html>
+        
+            <!-- <div class="left">             -->
