@@ -1,77 +1,72 @@
-#tweet-container {
+#tweets-container {
   position: relative;
   margin: auto;
 }
 
-.tweet:hover {
-  box-shadow: 5px 10px #4057a1c4;
-  color: rgb(58, 54, 54);
-  border: 3px solid rgb(58, 54, 54);
-
+.tweet-header{
+  height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    /* background-color: #0074cc; */
+    background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
 }
 
-.tweet:hover .tweetData {
-  border-bottom: 3px solid rgb(58, 54, 54);
+.tweet-header .left{
+  float: left;
+  margin-right: 20px;
 }
 
-.tweet {
-  background-color: #f4f1ec;
-  min-height: 280px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 3px solid rgb(121, 118, 118);
-  color: grey;
-  font-family: 'Source Sans Pro';
-  margin-bottom: 2em;
+.tweet-header h1 , .tweet-header h5{
+  margin: 0;
 }
 
-.tweetData {
-  padding-bottom: 20px;
-  border-bottom: 3px solid rgb(121, 118, 118);
-  font-size: 20px;
-  margin: 20px;
-  word-wrap: break-word;
-}
-
-.handle{
+.right{
   float: right;
-  font-size: 25px;
-  margin: 20px;
+  
 }
 
+.wrapper{
+  padding: 15px;
+}
 
-.tweet header{
+.tweet-footer{
+  margin: 20px 0 0;
+  border-top: solid 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 1.2rem;
-}
-
-.info{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  margin: 20px;
 }
 
-.name {
-  font-size: 1.5em;
+.message{
+  display:flex;
+  height: 100%;
+  align-items:center;
+  padding: 20px 0;
 }
 
-.date {
-  margin: 20px;
+#tweets{
+  border: 3px solid
 }
 
-.icons {
-  padding-right: 20px;
-  padding-bottom: 25px;
-  float: right;
+.new-tweet{
+  padding-bottom: 15%;
 }
 
-.avatar {
-  width: 60px;
-  height: 60px;
-  padding: 0;
-  font-size: 75px;
+.tweet-header:hover {
+  box-shadow: 10px 5px 5px #d8d3d3 ;
+  text-shadow: 1px 1px;
+}
+
+.fa-retweet:hover {
+  color: red;
+}
+
+.fa-heart:hover {
+  color: red
+}
+
+.fa-flag:hover {
+  color:red;
 }
