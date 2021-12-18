@@ -11,8 +11,6 @@ $(document).ready(function () {
       url: '/tweets',
       
     }).then((response) => {
-      // console.log("RESPONSE: ");
-      // console.log(response);
       renderTweets(response);
       $('#tweet-text').val("");
       $(".counter").text(140);
