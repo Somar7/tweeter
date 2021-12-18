@@ -82,7 +82,34 @@ const renderTweets = function(tweets) {
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container 
 }
-});
 
+const $newTweet = $('#tweet-form');
+  $newTweet.on('submit', function(event) {
+    event.preventDefault();
+    const tweet = $("#tweet-text").val().length;
+    console.log(tweet);
+    if (!tweet) {
+      $('#errorMessage').show();
+      $('#errorMessage').text("Tweet cannot be empty!");
+    };
+    if (tweet > 140) {
+      $('#errorMessage').show();
+      $('#errorMessage').text("Tweet can't be longer than 140 characters!");
+    } else {
+      const val = $(this).serialize();
+      $.ajax("/tweets", {
+        method: "POST",
+        data: val,
+      })
+      .then(() => {
+        $('#errorMessage').hide();
+        loadTweets();
+        $("#tweet-text").val("");
+     
+      });
+  }
+})
+
+});
 
 
