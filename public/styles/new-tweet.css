@@ -2,7 +2,7 @@ form {
   position: relative;
   border-bottom: 3px solid black;
   font-size: 1.2em;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 button{
@@ -15,7 +15,7 @@ button{
 
 button, .counter{
   position: absolute;
-  top: 100%;
+  top: 115%;
   font-family: "Bungee";
 }
 
@@ -31,6 +31,7 @@ button, .counter{
   resize: none;
   outline: none;
   margin-bottom: -10px;
+  border-bottom: 3px solid black;
 } 
 
 .counter.error {

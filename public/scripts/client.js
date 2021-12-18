@@ -33,7 +33,7 @@ $(document).ready(function () {
       "created_at": 1461113959088
     }
   ];
-
+  
   const createTweetElement = function(tweet) {
     let date = timeago.format(tweet.created_at);
     let $tweet = $(
@@ -58,18 +58,25 @@ $(document).ready(function () {
           console.log("testing", $tweet);
     return $tweet;
   };
-
+  
+  
   const renderTweets = function(tweets) {
-    $("#tweets").empty();
-    console.log($('.tweets-container'));
-    for (let tweet of tweets) {
-      $('.tweets-container').prepend(createTweetElement(tweet));
-        console.log(tweets);
-    }
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container 
-}
-
-renderTweets(data);
-});
+      $("#tweets").empty();
+      console.log($('.tweets-container'));
+      for (let tweet of tweets) {
+        $('.tweets-container').prepend(createTweetElement(tweet));
+          console.log(tweets);
+      }
+      // loops through tweets
+      // calls createTweetElement for each tweet
+      // takes return value and appends it to the tweets container 
+  }
+  
+  renderTweets(data);
+  
+  const $newTweet = $('#submit-tweet');
+    $newTweet.on('submit', function(event) {
+      event.preventDefault();
+    });
+  
+  });
