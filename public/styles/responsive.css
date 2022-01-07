@@ -1,0 +1,14 @@
+/* responsive design */
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    /*display: block;
+    width : 100%;*/
+  }
+
+  .mainbody {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+  }
+} 
